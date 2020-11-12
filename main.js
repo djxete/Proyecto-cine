@@ -1,3 +1,6 @@
+//Elementos DOM
+//-------------------------------------------------------
+
 let pelicula = document.getElementById("pelicula");
 //console.log(pelicula);
 
@@ -21,6 +24,7 @@ let total = document.getElementById("total");
 
 
 //Función actualizar precio
+//-----------------------------------------------------------------
 
 function actualizarPrecio(){
     const asientosSeleccionados = document.querySelectorAll(".fila .asiento.seleccionado");
@@ -33,6 +37,7 @@ function actualizarPrecio(){
 
 
 //Evento de la película seleccionada
+//-----------------------------------------------------------------
 
 pelicula.addEventListener("change", (e)=> {
     precioPelicula = e.target.value;
@@ -43,6 +48,8 @@ pelicula.addEventListener("change", (e)=> {
 
 
 // Evento del asiento seleccionado
+//-----------------------------------------------------------------
+
 
 asientos.forEach(asiento => {
     asiento.addEventListener("click", function (){
